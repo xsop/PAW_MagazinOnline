@@ -1,0 +1,85 @@
+﻿@model ShoppingCart
+@{
+    ViewData["Title"] = "GetUserCart";
+}
+
+<div style="width:90%;margin:auto" class="mt-2">
+    @if (Model != null && Model.CartDetails != null && Model.CartDetails.Count > 0)
+    {
+        <h5>My Cart</h5>
+
+        <table class="table table-striped d-none d-lg-table">
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Action</th>
+            </tr>
+            @foreach (var item in Model.CartDetails)
+            {
+                <tr>
+                    <td>
+                        @if (string.IsNullOrEmpty(item.Item.Image))
+                        {
+                            <img src="/img/noimg.png" style="width:100px" />
+                        }
+                        else
+                        {
+                            <img src="/img/@item.Item.Image" style="width:100px" />
+                        }
+                    </td>
+                    <td>@item.Item.Name</td>
+                    <td>@item.Item.Category.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@((decimal)item.Item.Price * item.Quantity)</td>
+                    <td>
+                        <a class="btn" href="/Cart/AddItem?itemId=@item.ItemId&&redirect=1">+</a>
+                        <a class="btn" href="/cart/RemoveItem?itemId=@item.ItemId">-</a>
+                    </td>
+                </tr>
+            }
+        </table>
+
+        <div class="d-lg-none">
+            @foreach (var item in Model.CartDetails)
+            {
+                <div class="border col-12 d-inline-flex justify-content-around my-1 py-3">
+                    <div class="col-5">
+                    @if (string.IsNullOrEmpty(item.Item.Image))
+                    {
+                        <img src="/img/noimg.png" class="img-fluid"/>
+                    }
+                    else
+                    {
+                        <img src="/img/@item.Item.Image" />
+                    }
+                    </div>
+                    <div class="col-6">
+                        <h5>@item.Item.Name</h5>
+                        <p class="mb-0">Category: @item.Item.Category.Name</p>
+                        <p class ="mb-0">Quantity: @item.Quantity</p>
+                        <p class ="mb-0">Total Price: @((decimal)item.Item.Price * item.Quantity)</p>
+                        <a class="btn" href="/Cart/AddItem?itemId=@item.ItemId&&redirect=1">+</a>
+                        <a class="btn" href="/cart/RemoveItem?itemId=@item.ItemId">-</a>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="my-2">
+            <h5>Total: </h5>
+            @((decimal)Model.CartDetails.Select(item => item.Item.Price * item.Quantity).Sum())
+        </div>
+
+        <div class="my-2">
+            <a class="btn btn-primary" href="/Cart/Checkout">Checkout</a>
+        </div>
+
+    }
+    else
+    {
+        <h5>Cart is empty</h5>
+    }
+</div>

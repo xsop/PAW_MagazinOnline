@@ -1,0 +1,95 @@
+﻿@model ItemDisplayModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="my-2">
+    <form asp-action="Index" class="row g-2">
+        <div class="col-12 col-md-3">
+            <label class="visually-hidden" for="catId">Categorii</label>
+            <select class="form-select" id="catId">
+                <option selected>Toate</option>
+                @foreach (var cat in Model.Categories)
+                {
+                    <option selected="@(cat.Id == Model.catId)" value="@cat.Id">@cat.Name</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-12 col-md-7">
+            <label class="visually-hidden" for="sterm">Search</label>
+            <div class="input-group">
+                <div class="input-group-text"></div>
+                <input type="text" class="form-control" id="sterm"  name="sterm" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-2">
+            <button class="btn btn-primary w-100" type="submit">Search</button>
+        </div>
+    </form>
+</div>
+
+<div class="mt-3 row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+    @foreach (var item in Model.Items)
+    {
+        <div class="col mb-4">
+            <div class="card">
+                @if(item.Image != null)
+                {
+                    <img src="@Url.Content(item.Image)" class="card-img-top">
+                }
+                else 
+                {
+                    <img src="/img/noimg.png" class="card-img-top">
+                }
+
+                <div class="card-body">
+                    <a href="@Url.Action("Details", "Item", new { id = item.Id })" class="card-title">@item.Name</a>
+                    <p class="card-text">
+                        @item.Category.Name
+                        <br />
+                        @item.Price Lei
+                    </p>
+                    <button type="button" onclick="add(@item.Id)" class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+@* <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> *@
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Added to cart</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        async function add(itemId) {
+            var usernameEl = document.getElementById("username");
+            if (usernameEl == null) {
+                window.location.href = "/Identity/Account/Login";
+            }
+            try {
+                var response = await fetch(`/Cart/AddItem?itemId=${itemId}`);
+                if (response.status == 200) {
+                    var result = await response.json();
+                    var cartCountEl = document.getElementById("cartCount");
+                    cartCountEl.innerHTML = result;
+                    window.location.href = "#cartCount";
+                }
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+
+    </script>
+}
