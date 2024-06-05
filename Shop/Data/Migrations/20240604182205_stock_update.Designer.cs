@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Shop.Data;
 
@@ -11,9 +12,11 @@ using Shop.Data;
 namespace Shop.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240604182205_stock_update")]
+    partial class stock_update
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -415,8 +418,7 @@ namespace Shop.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ItemId")
-                        .IsUnique();
+                    b.HasIndex("ItemId");
 
                     b.ToTable("Stock");
                 });
@@ -535,8 +537,8 @@ namespace Shop.Data.Migrations
             modelBuilder.Entity("Shop.Models.Stock", b =>
                 {
                     b.HasOne("Shop.Models.Item", "Item")
-                        .WithOne("Stock")
-                        .HasForeignKey("Shop.Models.Stock", "ItemId")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -553,9 +555,6 @@ namespace Shop.Data.Migrations
                     b.Navigation("CartDetail");
 
                     b.Navigation("OrderDetail");
-
-                    b.Navigation("Stock")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Shop.Models.Order", b =>

@@ -15,7 +15,7 @@ namespace Shop.Controllers
             _logger = logger;
         }
 
-        public async Task<IActionResult> Index(string sterm = "", int catId = 0)
+        public async Task<IActionResult> Index(string sterm = "", int? catId = null)
         {
             IEnumerable<Item> items = await _homeRepo.GetItems(sterm, catId);
             IEnumerable<Category> categories = await _homeRepo.GetCategories();
@@ -23,10 +23,12 @@ namespace Shop.Controllers
             ItemDisplayModel itemDisplayModel = new ItemDisplayModel
             {
                 Items = items,
-                Categories = categories
+                Categories = categories,
+                catId = catId  // Set catId here
             };
             return View(itemDisplayModel);
         }
+
 
         public IActionResult Privacy()
         {

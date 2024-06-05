@@ -13,10 +13,21 @@ namespace Shop.Controllers
 
         public async Task<IActionResult> AddItem(int itemId, int qty = 1, int redirect = 0)
         {
-            var cartCount = await _cartRepo.AddItem(itemId, qty);
-            if (redirect == 0)
-                return Ok(cartCount);
+            try
+            {
+                var cartCount = await _cartRepo.AddItem(itemId, qty);
+                TempData["successMessage"] = "Added to cart";
+                if (redirect == 0)
+                    return Ok(cartCount);
+            }
+            catch (Exception ex)
+            {
+                TempData["errorMessage"] = ex.Message;
+                return RedirectToAction(nameof(Index));
+            }
+
             return RedirectToAction("GetUserCart");
+
         }
 
         public async Task<IActionResult> RemoveItem(int itemId)
@@ -43,7 +54,5 @@ namespace Shop.Controllers
                 throw new Exception("Error: not checked out!");
             return RedirectToAction("Index", "Home");
         }
-
-
     }
 }

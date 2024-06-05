@@ -7,8 +7,8 @@
     <form asp-action="Index" class="row g-2">
         <div class="col-12 col-md-3">
             <label class="visually-hidden" for="catId">Categorii</label>
-            <select class="form-select" id="catId">
-                <option selected>Toate</option>
+            <select class="form-select" id="catId" name="catId">
+                <option selected="@(Model.catId == null)">Toate</option>
                 @foreach (var cat in Model.Categories)
                 {
                     <option selected="@(cat.Id == Model.catId)" value="@cat.Id">@cat.Name</option>
@@ -51,7 +51,14 @@
                         <br />
                         @item.Price Lei
                     </p>
-                    <button type="button" onclick="add(@item.Id)" class="btn btn-primary">Add to cart</button>
+                    @if (item.Quantity > 0)
+                    {
+                        <button type="button" onclick="add(@item.Id)" class="btn btn-primary">Add to cart</button>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-danger disabled">Out of stock</button>
+                    }
                 </div>
             </div>
         </div>
@@ -76,20 +83,28 @@
             var usernameEl = document.getElementById("username");
             if (usernameEl == null) {
                 window.location.href = "/Identity/Account/Login";
+                return; // Stop further execution
             }
+
             try {
                 var response = await fetch(`/Cart/AddItem?itemId=${itemId}`);
                 if (response.status == 200) {
                     var result = await response.json();
                     var cartCountEl = document.getElementById("cartCount");
                     cartCountEl.innerHTML = result;
-                    window.location.href = "#cartCount";
                 }
             }
             catch (err) {
                 console.log(err);
             }
+            window.location.href = "";
         }
+
+
+        document.getElementById('catId').addEventListener('change', function () {
+            this.form.submit();
+        });
+
 
     </script>
 }

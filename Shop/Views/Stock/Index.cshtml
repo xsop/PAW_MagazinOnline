@@ -1,0 +1,29 @@
+﻿@model IEnumerable<StockDisplayModel>
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Stocks</h2>
+
+<form asp-action="Index" method="get" class="my-2 d-flex gap-2">
+    <input type="text" name="sTerm" class="form-control w-25" placeholder="Search" />
+    <button type="submit" class="btn btn-primary">Find</button>
+    <a asp-action="Index" asp-controller="Stock" class="btn btn-danger">Reset</a>
+</form>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Item</th>
+        <th>Stock</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ItemName</td>
+            <td>@item.Quantity</td>
+            <td>
+                <a asp-action="ManageStock" asp-controller="Stock" asp-route-itemId="@item.ItemId" class="btn btn-primary">Update</a>
+            </td>
+        </tr>
+    }
+</table>

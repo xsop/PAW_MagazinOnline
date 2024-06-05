@@ -18,5 +18,6 @@ namespace Shop.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<OrderStatus> OrderStatus { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
     }
 }

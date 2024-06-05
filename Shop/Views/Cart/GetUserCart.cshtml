@@ -35,8 +35,16 @@
                     <td>@item.Quantity</td>
                     <td>@((decimal)item.Item.Price * item.Quantity)</td>
                     <td>
-                        <a class="btn" href="/Cart/AddItem?itemId=@item.ItemId&&redirect=1">+</a>
-                        <a class="btn" href="/cart/RemoveItem?itemId=@item.ItemId">-</a>
+                        @* <a class="btn" href="/Cart/AddItem?itemId=@item.ItemId&&redirect=1">+</a> *@
+                        @if (item.Quantity < item.Item.Stock.Quantity)
+                        {
+                            <a class="btn btn-primary" href="/Cart/AddItem?itemId=@item.ItemId&&redirect=1">+</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-danger disabled">+</a>
+                        }
+                        <a class="btn btn-primary" href="/cart/RemoveItem?itemId=@item.ItemId">-</a>
                     </td>
                 </tr>
             }
@@ -61,8 +69,15 @@
                         <p class="mb-0">Category: @item.Item.Category.Name</p>
                         <p class ="mb-0">Quantity: @item.Quantity</p>
                         <p class ="mb-0">Total Price: @((decimal)item.Item.Price * item.Quantity)</p>
-                        <a class="btn" href="/Cart/AddItem?itemId=@item.ItemId&&redirect=1">+</a>
-                        <a class="btn" href="/cart/RemoveItem?itemId=@item.ItemId">-</a>
+                        @if (item.Quantity < item.Item.Stock.Quantity)
+                        {
+                            <a class="btn btn-primary" href="/Cart/AddItem?itemId=@item.ItemId&&redirect=1">+</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-danger disabled">+</a>
+                        }
+                        <a class="btn btn-primary" href="/cart/RemoveItem?itemId=@item.ItemId">-</a>
                     </div>
                 </div>
             }

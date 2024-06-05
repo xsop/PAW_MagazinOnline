@@ -46,6 +46,16 @@ namespace Shop.Repositories
                 }
                 if (cartItem != null)
                 {
+                    // Check if the quantity exceeds the available stock
+                    var stock = _db.Stocks.FirstOrDefault(a => a.ItemId == itemId);
+                    if (stock is null)
+                    {
+                        throw new Exception("Stock not found");
+                    }
+                    if (cartItem.Quantity + qty > stock.Quantity)
+                    {
+                        throw new Exception("Item quantity exceeds available stock");
+                    }
                     cartItem.Quantity = cartItem.Quantity + qty;
                 }
                 else
@@ -55,15 +65,16 @@ namespace Shop.Repositories
                         ItemId = itemId,
                         ShoppingCartId = cart.Id,
                         Quantity = qty,
-                        UnitPrice = item.Price  // it is a new line after update
+                        UnitPrice = item.Price
                     };
                     _db.CartDetails.Add(cartItem);
                 }
                 _db.SaveChanges();
                 transaction.Commit();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                throw new Exception(ex.Message);
             }
             var cartItemCount = await GetCartItemCount(userId);
             return cartItemCount;
@@ -144,6 +155,13 @@ namespace Shop.Repositories
                         UnitPrice = item.UnitPrice
                     };
                     _db.OrderDetails.Add(orderDetail);
+
+                    var stock = _db.Stocks.FirstOrDefault(a => a.ItemId == item.ItemId);
+                    if (stock is null)
+                        throw new Exception("Stock not found");
+                    if(stock.Quantity < item.Quantity)
+                        throw new Exception("Stock not enough");
+                    stock.Quantity = stock.Quantity - item.Quantity;
                 }
                 _db.SaveChanges();
 
@@ -172,6 +190,9 @@ namespace Shop.Repositories
             if (userId == null)
                 throw new Exception("User invalid (maybe not logged in)");
             var shoppingCart = await _db.ShoppingCarts
+                                  .Include(a => a.CartDetails)
+                                  .ThenInclude(a => a.Item)
+                                  .ThenInclude(a => a.Stock)
                                   .Include(a => a.CartDetails)
                                   .ThenInclude(a => a.Item)
                                   .ThenInclude(a => a.Category)

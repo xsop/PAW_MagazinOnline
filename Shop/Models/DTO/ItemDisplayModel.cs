@@ -5,7 +5,8 @@
         public IEnumerable<Item> Items { get; set; }
         public IEnumerable<Category> Categories { get; set; }
         public string sterm { get; set; } = "";
-        public int catId { get; set; } = 0;
+        public int? catId { get; set; } = null;
+
 
     }
 }
