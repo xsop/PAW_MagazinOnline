@@ -187,5 +187,16 @@ public class ItemController : Controller
         }
         return RedirectToAction(nameof(Index));
     }
+    [AllowAnonymous]
+    public async Task<IActionResult> Details(int id)
+    {
+        var item = await _itemRepo.GetItemById(id);
+        if (item == null)
+        {
+            TempData["errorMessage"] = $"Item with the id: {id} does not found";
+            return RedirectToAction(nameof(Index));
+        }
+        return View(item);
+    }
 
 }

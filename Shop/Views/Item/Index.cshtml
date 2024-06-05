@@ -24,11 +24,11 @@
                 <td>
                     @if (string.IsNullOrWhiteSpace(item.Image))
                     {
-                        <img src="/Images/NoImage.png" style="width:80px;height:100px" alt="item image" />
+                        <img src="/img/noimg.png" style="max-width:100px" alt="item image" />
                     }
                     else
                     {
-                        <img src="/images/@item.Image" style="width:80px;height:100px" alt="item image" />
+                        <img src="/img/@item.Image" style="max-width:100px" alt="item image" />
                     }
                 </td>
                 <td>@item.Name</td>
