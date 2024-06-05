@@ -3,28 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\views\\stock\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\views\\stock\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\repositories\\icategoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\repositories\\icategoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\logintest.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\logintest.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\repositories\\cartrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\repositories\\cartrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\repositories\\itemrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\repositories\\itemrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\models\\dto\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\models\\dto\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\models\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\models\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\views\\category\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\views\\category\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\views\\category\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\views\\category\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\data\\migrations\\20240605083803_stock-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\data\\migrations\\20240605083803_stock-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\models\\dto\\stockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\models\\dto\\stockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|c:\\users\\admin\\source\\repos\\shop\\shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8B321-1B60-4359-8723-B31974C82DA5}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +70,199 @@
       "DocumentGroups": [
         {
           "DockedWidth": 254,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Shop\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Shop\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T10:22:16.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Stock\\Index.cshtml",
-              "RelativeDocumentMoniker": "Shop\\Views\\Stock\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Stock\\Index.cshtml",
-              "RelativeToolTip": "Shop\\Views\\Stock\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T10:22:14.053Z",
+              "DocumentIndex": 2,
+              "Title": "ICategoryRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\ICategoryRepo.cs",
+              "RelativeDocumentMoniker": "Shop\\Repositories\\ICategoryRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\ICategoryRepo.cs",
+              "RelativeToolTip": "Shop\\Repositories\\ICategoryRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:16:40.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "logintest.txt",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\logintest.txt",
-              "RelativeDocumentMoniker": "Shop\\logintest.txt",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\logintest.txt",
-              "RelativeToolTip": "Shop\\logintest.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-05T10:21:11.259Z",
+              "Title": "CategoryRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\CategoryRepo.cs",
+              "RelativeDocumentMoniker": "Shop\\Repositories\\CategoryRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\CategoryRepo.cs",
+              "RelativeToolTip": "Shop\\Repositories\\CategoryRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:13:24.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StockController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\StockController.cs",
-              "RelativeDocumentMoniker": "Shop\\Controllers\\StockController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\StockController.cs",
-              "RelativeToolTip": "Shop\\Controllers\\StockController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAADwvzEAAAAMAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Program.cs",
+              "RelativeDocumentMoniker": "Shop\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Program.cs",
+              "RelativeToolTip": "Shop\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T10:06:21.919Z",
+              "WhenOpened": "2024-06-05T16:10:40.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Shop\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Shop\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBkAAAAQAAAA",
+              "DocumentIndex": 6,
+              "Title": "ItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Models\\DTO\\ItemDTO.cs",
+              "RelativeDocumentMoniker": "Shop\\Models\\DTO\\ItemDTO.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Models\\DTO\\ItemDTO.cs",
+              "RelativeToolTip": "Shop\\Models\\DTO\\ItemDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T09:31:51.859Z",
+              "WhenOpened": "2024-06-05T16:09:22.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CartRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\CartRepo.cs",
-              "RelativeDocumentMoniker": "Shop\\Repositories\\CartRepo.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\CartRepo.cs",
-              "RelativeToolTip": "Shop\\Repositories\\CartRepo.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAArwEwAAAAwAAAA",
+              "Title": "ItemRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\ItemRepo.cs",
+              "RelativeDocumentMoniker": "Shop\\Repositories\\ItemRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Repositories\\ItemRepo.cs",
+              "RelativeToolTip": "Shop\\Repositories\\ItemRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T09:16:10.821Z",
+              "WhenOpened": "2024-06-05T16:06:08.08Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Category\\UpdateCategory.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Category\\UpdateCategory.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Category\\UpdateCategory.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Category\\UpdateCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T16:03:00.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCAAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T15:56:41.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T15:31:55.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240605083803_stock-update.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Data\\Migrations\\20240605083803_stock-update.cs",
+              "RelativeDocumentMoniker": "Shop\\Data\\Migrations\\20240605083803_stock-update.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Data\\Migrations\\20240605083803_stock-update.cs",
+              "RelativeToolTip": "Shop\\Data\\Migrations\\20240605083803_stock-update.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:28:55.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Category\\AddCategory.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Category\\AddCategory.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Views\\Category\\AddCategory.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Category\\AddCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T15:28:32.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\ItemController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\ItemController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:18:32.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:18:08.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Models\\DTO\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "Shop\\Models\\DTO\\CategoryDTO.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Models\\DTO\\CategoryDTO.cs",
+              "RelativeToolTip": "Shop\\Models\\DTO\\CategoryDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:17:58.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:17:50.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StockDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Models\\DTO\\StockDTO.cs",
+              "RelativeDocumentMoniker": "Shop\\Models\\DTO\\StockDTO.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Shop\\Shop\\Models\\DTO\\StockDTO.cs",
+              "RelativeToolTip": "Shop\\Models\\DTO\\StockDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:17:39.73Z"
             }
           ]
         }
