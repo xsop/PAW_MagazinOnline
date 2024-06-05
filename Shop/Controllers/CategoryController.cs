@@ -1,4 +1,4 @@
-﻿using Humanizer.Localisation;
+﻿
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Consts;

@@ -2,7 +2,7 @@
 
 namespace Shop.Repositories
 {
-    public interface IItemRepository
+    public interface IItemRepo
     {
         Task AddItem(Item item);
         Task DeleteItem(Item item);
@@ -11,10 +11,10 @@ namespace Shop.Repositories
         Task UpdateItem(Item item);
     }
 
-    public class ItemRepository : IItemRepository
+    public class ItemRepo : IItemRepo
     {
         private readonly ApplicationDbContext _context;
-        public ItemRepository(ApplicationDbContext context)
+        public ItemRepo(ApplicationDbContext context)
         {
             _context = context;
         }
